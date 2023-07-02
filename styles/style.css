@@ -1,0 +1,425 @@
+/* панель */
+.hov:hover{
+    background-color: rgba(145, 97, 52, 0.76);
+    font-weight: bold;
+}
+.navbar-toggler:hover{
+    background-color: rgba(145, 97, 52, 0.548);
+}
+#coff {
+    font-size: 22px;
+    animation: color-change 5s infinite;
+  }
+@keyframes color-change {
+        0% { color: rgb(0, 0, 0); }
+        20% { color: rgb(95, 63, 11); }
+        40% { color: rgb(211, 166, 99); }
+        60% { color: rgb(174, 154, 122); }
+        80% { color: rgb(95, 63, 11); }
+        100% { color: rgb(0, 0, 0); }
+}
+
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* главная */
+.mainimg{
+    margin-top: 100px;
+    display: flex; 
+}
+#glavimg{
+    width: 60% 
+}
+#glavimg img {
+    width: 85%;
+}
+#glavimg2{
+    width: 40%;
+    max-height: 30%;
+}
+#glavimg2 img{
+    width: 90%;
+    margin-left: 5px;
+}
+
+
+/* hi */
+.hi {
+    margin: 10px 2% 0 2%;
+    background-color: rgb(249, 235, 203);
+    border: 1px solid  rgba(171, 149, 116, 0.597);
+    box-shadow: 5px 15px 10px 5px rgba(128, 103, 61, 0.245);
+    height: 210px;
+    border-radius: 20px;
+}
+.hi h3 {
+    font-style: italic;
+    margin: 10px 20px 0 20px;
+    text-align: center;
+}
+#work::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: rgb(141, 88, 13);
+    display: block;
+    transition: 0.6s linear;
+}
+#work:hover::after {
+    width: 300px;
+}
+
+
+/* kонтакты */
+.contacts{
+    background-image: url(../images/fon.png);
+    height: auto;
+    background-color: rgb(244, 204, 135);
+    border: 1px solid rgba(164, 108, 24, 0.726);
+    border-radius: 20px;
+    width: auto;
+    margin: -50px 10% 0 10%;
+    box-shadow: 3px 15px 5px 5px rgba(113, 72, 1, 0.127);
+}
+.contacts #cof {
+    margin: 0 35% 10px 35%;
+}
+.contacts #cof img{
+    width: 30%;
+}
+.cont p img{
+    width: 25px;
+    margin: -6px 0 0 10px;
+}
+.cont{
+    display:flex;
+    flex-wrap: wrap;
+    margin: 0 5% 0 0;
+}
+.cont h4{
+    padding-top: 10px;
+    padding-left: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+.cont p{
+    padding-top: 10px;
+    padding-left: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+.cont a {
+    text-decoration: none;
+    color:rgb(48, 31, 3);
+}
+.cont a:hover{
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(125, 80, 2) 1px 0 10px;
+}
+
+/* галерея */
+#cap{
+    width: 30%;
+}
+.gallery{
+    margin-bottom: 30px; 
+    margin-top: -100px; 
+}
+.gallery h1{
+    font-style: italic;
+    text-align: center; 
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+.gal{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 8%;
+}
+.gal div{
+    width: 44%;
+    margin: 1%;
+}
+.lin{
+    width: 60px;
+}
+.gal .mesto{
+    width: 95%;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: 0.3s;
+    height: 350px;
+    
+}
+.gal .mesto:hover{
+    transform: scale(1.1);
+}
+
+#cap2{
+    width: 370px;
+    margin: -150px 0 0 70%;
+}
+
+/* акции */
+#sile{
+    text-align: right;
+    margin:0  5% 50px 0;
+}
+.gallery2{
+    width: 100%;
+    padding: 70px 0 0 0;
+    margin-top: -190px;
+}
+.gallery2 h3{
+    margin-left: 5%;
+    color: brown;
+    font-weight: bold;
+    font-style: italic;
+}
+ a {
+    text-decoration: none;
+    font-weight: bold;
+}
+ a:hover{
+    color: rgb(0, 0, 0);
+}
+.gallary2 h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgbox{
+    width: 95%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:10px;
+}
+.imggal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+.imggal img {
+    width: 100%;
+    transition: .4s;
+}
+.imggal:hover img {
+    opacity: 0.2;
+}
+.imggal p{
+    font-size: 20px;
+    position: absolute;
+    width: 100px;
+    margin: 15px 0px;
+    text-align: center;
+    color: white;
+    line-height: 22px;
+    opacity: 0;
+    z-index: 5;
+    transition: 0.3s;
+}
+.imggal:hover p{
+    opacity: 1;
+}
+#idvk{
+    text-align: right;
+    margin:0  5% 50px 0;
+}
+
+
+/* регистрация */
+.regform p{
+    margin-top: 15px;
+}
+.reg #chashca{
+    width: 40%;
+    padding-top: 50px;
+}
+#chashca img{
+    width: 90%;
+}
+.reg {
+    margin: 10px 0 20px 10%;
+    display: flex;
+}
+.reg #regform{
+    width: 60%;
+    margin-left: 10px;
+}
+#regform h4{
+    font-weight: bold;
+    margin: 30px 0;
+    text-align: center;
+}
+#otpr {
+    margin: 10px 0 30px 0px;
+}
+#otpr:active{
+    background-color: rgb(17, 64, 36);
+    box-shadow: 3px 5px 5px 3px rgba(11, 40, 15, 0.127);
+}
+
+
+/* вк */
+.vk #logo img{
+    border-radius: 100%;
+    width: 100%;
+}
+#logo{
+    width: 70%;
+    margin: 0 15% 0 15%;
+}
+.vk{
+    margin: 0 40% 50px 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 20%;
+
+}
+.vk button:active{
+    background-color: rgb(14, 14, 59);
+    box-shadow: 3px 5px 5px 3px rgba(11, 1, 69, 0.127);
+}
+
+/*  */
+.footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: auto;
+    background-color: rgb(37, 22, 3);
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.footer div{
+    padding: 10px;
+    width: 20%;
+}
+.footer div p{
+    font-style: italic;
+}
+.footer a {
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+.footer a:hover{
+    color: rgba(255, 227, 155, 0.889);
+}
+.footer h5 {
+    color: rgb(255, 220, 155);
+}
+.footer2{
+    color: white;
+    text-align: center;
+    background-color: rgb(37, 22, 3);
+    height: 40px;
+}
+@media (min-width: 1100px) {
+    .gallery h1 i{
+        font-size: 55px;
+    }
+	.gal div{
+        width: 30%;
+    }
+    .gal .mesto{
+        height: 300px;
+    }
+    .hi {
+        margin: 10px 12% 0 12%;
+        height: 260px;
+    }
+    .hi h3{
+        font-size: 32px;
+        width: 60%;
+        margin: 15px 20% 0 20%;
+    }
+    .contacts{
+        margin-left: 20%;
+        width: 60%;
+    }
+    .contacts div h4{
+        font-size: 28px;
+    }
+    .contacts div p{
+        font-size: 20px;
+    }
+    #work:hover::after {
+        width: 370px;
+    }
+    body p, #p, label{
+        font-size: 22px;
+    }
+    .imggal p{
+        width: 350px;
+        font-size: 30px;
+        line-height: 1em;
+    }
+}
+@media (max-width: 1100px) {
+    .gal .mesto{
+        height: 250px;
+    }
+}
+@media (max-width: 600px) {
+    .imggal p{
+        font-size: 10px;
+    }
+    .gallery h1 i{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    #work::after {
+        transition: 0s;
+    }
+    #work:hover::after {
+        width: 0;
+    }
+    .gal{
+        display: flex;
+        flex-direction: column;
+        margin: 0 5% 10px 15%;
+    }
+    .gal div{
+        width: 90%;
+    }
+    .gal .mesto{
+        width: 90%;
+        max-height: 200px;
+        max-width:350px;
+        margin: 0 65% 0 0%;
+    }
+    .reg{
+        margin-left: 10px;
+    }
+    .hi {
+        height: 230px;
+    }
+    .footer2{
+        height: 40px;
+        margin: -3px 0 5px 0;
+    }
+    .vk{
+        width: 40%;
+        margin: 0 30% 50px 30%;
+    }
+    .contacts img{
+        width: 50%;
+    }
+    .gallery h1{
+        font-size:30px;
+        margin-top: 30px;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footer div{
+        width: 90%;
+    }
+}
